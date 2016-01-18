@@ -13,4 +13,4 @@ def add_username_segment(powerline):
     else:
         bgcolor = Color.USERNAME_BG
 
-    powerline.append(user_prompt, Color.USERNAME_FG, bgcolor)
+    powerline.append(user_prompt, Color.USERNAME_FG, bgcolor, None, None, True)
