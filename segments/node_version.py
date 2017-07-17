@@ -6,6 +6,6 @@ def add_node_version_segment(powerline):
         p1 = subprocess.Popen(["node", "--version"], stdout=subprocess.PIPE)
         version = p1.communicate()[0].decode("utf-8").rstrip()
         version = " " + version + " "
-        powerline.append(version, Color.REPO_DIRTY_FG, Color.REPO_DIRTY_BG)
+        powerline.append(version, Color.SSH_FG, 24)
     except OSError:
         return
